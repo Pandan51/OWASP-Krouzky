@@ -20,7 +20,7 @@
     "diagrams": [
       {
         "id": 117,
-        "title": "New EoP games diagram",
+        "title": "The first example",
         "diagramType": "EOP",
         "placeholder": "New EoP games diagram description",
         "thumbnail": "./public/content/images/thumbnail.eop.jpg",
