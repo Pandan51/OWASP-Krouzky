@@ -19,16 +19,16 @@
     ],
     "diagrams": [
       {
-        "id": 84,
-        "title": "Test Za stred",
-        "diagramType": "CIA",
-        "placeholder": "New CIA diagram description",
-        "thumbnail": "./public/content/images/thumbnail.cia.jpg",
+        "id": 117,
+        "title": "New EoP games diagram",
+        "diagramType": "EOP",
+        "placeholder": "New EoP games diagram description",
+        "thumbnail": "./public/content/images/thumbnail.eop.jpg",
         "version": "2.6.2",
         "cells": []
       }
     ],
-    "diagramTop": 85,
+    "diagramTop": 118,
     "reviewer": "",
     "threatTop": 0
   }
