@@ -480,7 +480,162 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 300,
+              "y": 375
+            },
+            "size": {
+              "width": 1130,
+              "height": 320
+            },
+            "attrs": {
+              "label": {
+                "text": "TB1 - Open internet"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "436a0ef8-47f3-4395-be60-f9a68975fadd",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB1 - Open internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "a1f9a27c-6243-44f5-8a0b-e41c4d3584ea"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 340,
+              "y": 440
+            },
+            "size": {
+              "width": 180,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Zákazník pořadatele"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "17ded81f-736b-4a2a-8b8c-2221103780d2"
+                },
+                {
+                  "group": "right",
+                  "id": "1bbe289b-4e44-46e1-9f94-b1e848466ae1"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a7a2e38f-f848-41d0-8c83-3fd235f396c4"
+                },
+                {
+                  "group": "left",
+                  "id": "baa218ce-8414-4cb5-906d-b2520b0661f7"
+                }
+              ]
+            },
+            "id": "a1f9a27c-6243-44f5-8a0b-e41c4d3584ea",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Zákazník pořadatele",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 87,
