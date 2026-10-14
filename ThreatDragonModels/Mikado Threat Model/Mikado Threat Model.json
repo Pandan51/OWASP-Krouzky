@@ -550,7 +550,10 @@
                 "a71d83d8-0528-4a43-87c0-93f8837a8b81",
                 "effbf724-a66f-4b48-bcb6-f961aacece5c",
                 "5f5e1397-7877-4ed5-a604-d90081ed89fd",
-                "d29a3a00-0944-4681-8c31-b53a3700f127"
+                "d29a3a00-0944-4681-8c31-b53a3700f127",
+                "f44f939d-a477-45f4-aa7d-706431007575",
+                "6421148c-7db4-4e48-8ec1-d17deda0c50d",
+                "8690df20-59c1-47b1-af02-7e13d8afdc45"
               ],
               "containedElements": [
                 "b52530ea-6f1a-409c-928c-6ab25c351b98",
@@ -585,7 +588,8 @@
                 "2feb78f9-fed2-4906-aabf-e71121e1590b",
                 "96a35802-16d4-4e08-ac48-6cf174a05dc8",
                 "108ad84a-6941-42c9-97db-20daf87057d0",
-                "a71d83d8-0528-4a43-87c0-93f8837a8b81"
+                "a71d83d8-0528-4a43-87c0-93f8837a8b81",
+                "f44f939d-a477-45f4-aa7d-706431007575"
               ],
               "containedElements": [
                 "3228079c-9bcf-4a9c-bc6d-e420b206393e",
@@ -596,7 +600,7 @@
           {
             "position": {
               "x": 1136,
-              "y": 1090.0000000000105
+              "y": 1135
             },
             "size": {
               "width": 340,
@@ -683,7 +687,10 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "6421148c-7db4-4e48-8ec1-d17deda0c50d",
+                "8690df20-59c1-47b1-af02-7e13d8afdc45"
+              ],
               "containedElements": [
                 "9bc756da-67f6-4350-9672-a59f9ba55880"
               ]
@@ -2077,7 +2084,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "In",
+              "name": "Identifikátor admistrátorského účtu",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2091,18 +2098,191 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "In"
+              "Identifikátor admistrátorského účtu"
             ],
-            "id": "4f2ecd8d-354c-4de6-ac8f-9f7f541b1ff8",
+            "id": "f5ec644c-8a30-4ffd-8a65-8c7d7f04ae48",
             "source": {
-              "cell": "b52530ea-6f1a-409c-928c-6ab25c351b98",
-              "port": "d6e4275d-ea8d-46c3-b66f-d16fa7fcfe3b"
-            },
-            "target": {
               "cell": "2b88d1ac-1d82-4b91-b7c3-9fd4839b2397",
               "port": "25c848dc-bb57-4cdf-86ff-96a384d0ab0d"
             },
+            "target": {
+              "cell": "b52530ea-6f1a-409c-928c-6ab25c351b98",
+              "port": "d6e4275d-ea8d-46c3-b66f-d16fa7fcfe3b"
+            },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Update stavu verifikace uživatele",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "833261cf-a08a-4ae1-8d7a-28ed8276adae",
+                "ea393694-ae3b-452e-b412-55056e87f77c"
+              ]
+            },
+            "labels": [
+              "Update stavu verifikace uživatele"
+            ],
+            "id": "f44f939d-a477-45f4-aa7d-706431007575",
+            "source": {
+              "cell": "2b88d1ac-1d82-4b91-b7c3-9fd4839b2397",
+              "port": "3c96abe6-052d-4110-9515-9752317fd1e4"
+            },
+            "target": {
+              "cell": "3228079c-9bcf-4a9c-bc6d-e420b206393e",
+              "port": "d83ec4ae-803a-48b2-a9be-ef7dfd6c628e"
+            },
+            "vertices": [
+              {
+                "x": 1190,
+                "y": 1100
+              },
+              {
+                "x": 1630,
+                "y": 1120
+              },
+              {
+                "x": 1630,
+                "y": 1470
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Client verification, client id, public key",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "833261cf-a08a-4ae1-8d7a-28ed8276adae",
+                "3687fd74-c7ea-4a0e-a7aa-1600f4977dbf"
+              ]
+            },
+            "labels": [
+              "Client verification, client id, public key"
+            ],
+            "id": "6421148c-7db4-4e48-8ec1-d17deda0c50d",
+            "source": {
+              "cell": "9bc756da-67f6-4350-9672-a59f9ba55880",
+              "port": "80bec94d-f9cc-484c-9b42-40cac8a78ff4"
+            },
+            "target": {
+              "cell": "2b88d1ac-1d82-4b91-b7c3-9fd4839b2397",
+              "port": "d1f708ad-2176-491b-ad6d-4fd18c4895eb"
+            },
+            "vertices": [
+              {
+                "x": 1100,
+                "y": 930
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Client verification request, client id, public key",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "833261cf-a08a-4ae1-8d7a-28ed8276adae",
+                "3687fd74-c7ea-4a0e-a7aa-1600f4977dbf"
+              ]
+            },
+            "labels": [
+              "Client verification request, client id, public key"
+            ],
+            "id": "8690df20-59c1-47b1-af02-7e13d8afdc45",
+            "source": {
+              "cell": "2b88d1ac-1d82-4b91-b7c3-9fd4839b2397",
+              "port": "d1f708ad-2176-491b-ad6d-4fd18c4895eb"
+            },
+            "target": {
+              "cell": "9bc756da-67f6-4350-9672-a59f9ba55880",
+              "port": "80bec94d-f9cc-484c-9b42-40cac8a78ff4"
+            },
+            "vertices": [
+              {
+                "x": 1120,
+                "y": 1030
+              }
+            ]
           },
           {
             "position": {
@@ -2367,7 +2547,7 @@
           },
           {
             "position": {
-              "x": 690,
+              "x": 693.75,
               "y": 1460
             },
             "size": {
@@ -3432,8 +3612,8 @@
           },
           {
             "position": {
-              "x": 882,
-              "y": 955
+              "x": 872,
+              "y": 940
             },
             "size": {
               "width": 100,
