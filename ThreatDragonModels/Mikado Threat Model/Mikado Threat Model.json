@@ -472,9 +472,18 @@
             }
           }
         ]
+      },
+      {
+        "id": 86,
+        "title": "PaymentDataFlow",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
       }
     ],
-    "diagramTop": 86,
+    "diagramTop": 87,
     "reviewer": "",
     "threatTop": 0
   }
